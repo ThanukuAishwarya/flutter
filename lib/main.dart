@@ -13,7 +13,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: new Text('MY GRID VIEW'),
+          title: new Text('GRID VIEW'),
         ),
         body: Container(
           /* child: CustomScrollView(
