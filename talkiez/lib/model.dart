@@ -26,6 +26,7 @@ class ModelOfLang {
 }
 
 class Data {
+  bool isSelected = false;
   String id;
   String key;
   String value;

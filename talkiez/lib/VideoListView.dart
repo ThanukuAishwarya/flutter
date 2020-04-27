@@ -40,10 +40,13 @@ class _VideoListViewState extends State<VideoListView> {
   }
   @override
   void initState() {
+    super.initState();
     if (playerController == null) {
       playerController =
-      VideoPlayerController.asset("assets/videos/talkiezsample.mp4")
-        ..addListener(() {
+      VideoPlayerController.asset("assets/talkiezsample.mp4");
+      playerController.initialize();
+      playerController.play();
+       /* ..addListener(() {
           if (playerController!=null && playerController.value!=null && playerController.value.initialized) {
             Duration duration = playerController.value.duration;
             Duration position = playerController.value.position;
@@ -51,9 +54,9 @@ class _VideoListViewState extends State<VideoListView> {
         })
         ..setVolume(1.0)
         ..initialize()
-        ..play();
+        ..play();*/
 
-      super.initState();
+
     }
   }
 }
